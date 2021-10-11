@@ -50,9 +50,9 @@ void tilt(float angle)
 
 void pan(float angle)
 {
-  Serial.print("Moving to ");
-  Serial.print(angle);
-  Serial.println(" degrees.");
+  //Serial.print("Moving to ");
+  //Serial.print(angle);
+  //Serial.println(" degrees.");
   counts = stepsPerRevolution * (angle - currentAngle)/360;
   panStepper.step(counts);
   currentAngle = angle;
