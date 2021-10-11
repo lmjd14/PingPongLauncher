@@ -13,7 +13,7 @@ void setup()
   
   // Set up tilt servo
   tiltServo.attach(TILT_SERVO_PIN);
-  // Set up motor transistor
+  // Set up motor MOSFET
   pinMode(MOTOR_PIN, OUTPUT);
   digitalWrite(MOTOR_PIN, LOW);
 
